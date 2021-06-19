@@ -46,7 +46,7 @@ function displayResults (weather) {
       city.innerText = `${weather.request.query}`;
       date.innerText =`${weather.location.localtime}`;
       temp.innerHTML =`${weather.current.temperature}<span>°c</span>`;
-      climate.innerHTML =`<img src=${weather.current.weather_icons[0]}><span> ${weather.current.weather_descriptions[0]}</span>`;
+      climate.innerText =`${weather.current.weather_descriptions[0]}`;
       humid.innerHTML=`Humidity: ${weather.current.humidity}<span>%</span>`;
       precip.innerHTML=`Precipitation: ${weather.current.precip}<span>mm</span>`;
       uv.innerHTML=`UV-Index: ${weather.current.uv_index}`;
